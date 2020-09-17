@@ -10,14 +10,14 @@ function NotaNumber() {
 }
 
 function NotaNumber() {
-    x = 5+2;
+    x = 5+2; // isNan (is not a number)
     document.getElementById("Notanumber").innerHTML = x;
-    document.getElementById("realnumber").innerHTML = isNaN(x);
+    document.getElementById("realnumber").innerHTML = isNaN(x);// isNan (is not a number)
 }
 
 function FakeNumber() {
     x = 0 / 0;
-    document.getElementById("fakenumber").innerHTML = isNaN(x);
+    document.getElementById("fakenumber").innerHTML = isNaN(x);// isNan (is not a number)
 }
 
 function infinite() {
@@ -42,11 +42,10 @@ function dataandvalue() {
 }
 
 function dataandvalue2() {
-    var x = "HELLO";
+    var x = "HELLO"; // adding non similiar data types together
     var y = 10;
     document.getElementById("dataandvalue2").innerHTML = (x === y);
 }
-
 
 
 function dataandvalue3() {
@@ -58,7 +57,7 @@ function dataandvalue3() {
 function dataandvalue4() {
     var x = 5;
     var y = 10;
-    document.getElementById("dataandvalue4").innerHTML = (x === y);
+    document.getElementById("dataandvalue4").innerHTML = (x === y); // compares the data value
 }
 
 function andsign() {
