@@ -74,3 +74,7 @@ function orsign() {
 function negative() {
     document.getElementById("negative").innerHTML = !( 5 > 3);
 }
+
+function andoperator() {
+    document.getElementById("andoperator").innerHTML = (5 > 3 && 10 > 9);
+}
