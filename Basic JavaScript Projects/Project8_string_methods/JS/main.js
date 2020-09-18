@@ -23,7 +23,7 @@ function IntToString() {
 
 function Precision() {
     var x = 152.9842651542;
-    document.getElementById("Precision").innerHTML = "Precision Method,  " + x.toPrecision(6);
+    document.getElementById("Precision").innerHTML = "Precision Method,  " + x.toPrecision(6); // finds a more precise number based on the parameter given and removes from decimal.
 }
 
 function FixedNumber(){
