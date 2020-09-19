@@ -1,5 +1,8 @@
 var globalvar = "This is a global variable"; //global variable can be grabbed by any function.
 
+
+///////////////////IF Demonstration//////////////////////
+
 function RNGgame() {
    var x = Math.floor(Math.random() * 10);
     if (x == 5) {
@@ -10,19 +13,31 @@ function RNGgame() {
     }
 }
 
+///////////////////Error Demonstration//////////////////////
+
 function returnanswer() {
     document.write("returnanswer").innerHTML = x; // This is just to demonstrate an error.
     console.log();  // Logging it to the console with this command.
 }
 
-function ontime() {
-    if (new Date().getHours() > 12) { // time function uses 24h time between 0-23
-        document.getElementById("ontime").innerHTML = "No, its past noon";
+///////////////////TIME FUNCTION//////////////////////
+
+function ontime(){
+    var Time = new Date().getHours(); //Time set as variable with hours between 0-23.
+    var str; // not assigned yet. Will be used to return string to id.
+    if (Time < 12 == Time > 0) { // if the time is before noon true and time is greater than midnight then statement is true so continue if.
+        str = "It's morning right now";
+    }
+    else if (Time > 12 == Time < 18) { //if the time is later than noon but earlier than 6pm is after noon
+        str = "It is afternoon right now";
     }
     else {
-        document.getElementById("ontime").innerHTML = "Yes, it is before noon";
+        str = "It is evening time."; // doesnt need any time since the remaining hours would be evening anyways.
     }
+    document.getElementById("Return").innerHTML = str;
 }
+
+///////////////////USING A GLOBAL VARIABLE//////////////////////
 
 function Global_variable() { //called the function required to grab global var.
     document.getElementById("Global_variable").innerHTML = globalvar;

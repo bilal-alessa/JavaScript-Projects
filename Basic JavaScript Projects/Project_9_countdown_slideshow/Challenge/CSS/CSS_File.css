@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+}
+
+/* hiding the images*/
+.hidden {
+    display: none;
+}
+
+img {
+    max-width: 25%;
+}
