@@ -7,7 +7,11 @@
     margin: auto;
 }
 
-/* Hide the images by default */
+/* Hide the images by default 
+
+Hides all the slides and we call back the original one because
+the variable is equal to 1, the first slide within the function.*/
+
 .mySlides {
     display: none;
 }
