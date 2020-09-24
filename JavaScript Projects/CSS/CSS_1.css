@@ -1,0 +1,27 @@
+.Forms {
+    background-color:#d2b48c ;
+    width: 35%;
+    margin: auto;
+}
+
+input {
+    width: 95%;
+    margin: 10px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(112, 94, 71);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+label {
+    text-align: left;
+    margin: 5px;
+}
